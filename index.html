@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Generator</title>
+
+    <style>
+        #settings label,
+        #settings input {
+            display: block;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="content">
+        <canvas id="display" width="500" height="500"></canvas>
+        <div id="settings">
+            <label for="dimension">Dimensions: <span id="dimensionDisplay">10x10</span></label>
+            <input type="range" id="dimension" min="5" max="50" value="10">
+            <label for="speed">Speed: <span id="speedDisplay">10</span></label>
+            <input type="range" id="speed" min="1" max="100" value="10">
+            <button id="generate" onclick="generate()">Generate</button>
+        </div>
+        <script src="main.js"></script>
+    </div>
+</body>
+
+</html>
